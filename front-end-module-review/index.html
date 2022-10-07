@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+  <title>Module HTML-CSS-JAVASCRIPT Review</title>
+
+  <style>
+    .task-container:not(:last-child) {
+      margin-bottom: 100px;
+    }
+
+    .form {
+      max-width: 400px;
+    }
+
+    .regional-capital {
+      color: #cc0000;
+    }
+
+    .column {
+      height: 150px;
+    }
+
+    pre {
+      display: block;
+      font-family: monospace;
+      white-space: pre;
+      margin: 1em 0;
+    }
+  </style>
+</head>
+<body class="p-5">
+  <div class="container">
+    <h1 class="mb-5">Module HTML-CSS-JAVASCRIPT Review</h1>
+
+    <div class="accordion accordion-flush" id="tasks">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="task-1a-heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#task-1a-collapce" aria-expanded="false" aria-controls="task-1a-collapce">
+            Exercise 1.a
+          </button>
+        </h2>
+        <div id="task-1a-collapce" class="accordion-collapse collapse" aria-labelledby="task-1a-heading" data-bs-parent="#tasks">
+          <div class="accordion-body">
+
+            <ul class="nav nav-tabs mb-3" id="task-1a-tabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="task-1a-result-tab" data-bs-toggle="tab" data-bs-target="#task-1a-result" type="button" role="tab" aria-controls="task-1a-result" aria-selected="true">Result</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="task-1a-code-tab" data-bs-toggle="tab" data-bs-target="#task-1a-code" type="button" role="tab" aria-controls="task-1a-code" aria-selected="false">Code</button>
+              </li>
+            </ul>
+
+            <div class="tab-content" id="task-1a-tabs-content">
+              <div class="tab-pane fade show active" id="task-1a-result" role="tabpanel" aria-labelledby="task-1a-result-tab" tabindex="0">
+                <!-- Task 1.a [START] -->
+                <form action="http://example.com" method="post" class="form">
+                  <div class="d-flex gap-3 mb-3">
+                    <div>
+                      <label for="form-name" class="form-label">Name</label>
+                      <input id="form-name" class="form-control" type="text" placeholder="Enter your name">
+                    </div>
+        
+                    <div>
+                      <label for="form-surname" class="form-label">Surname</label>
+                      <input id="form-surname" class="form-control" type="text" placeholder="Enter your surname">
+                    </div>
+                  </div>
+        
+                  <div class="mb-3">
+                    <label for="form-email" class="form-label">E-mail</label>
+                    <input id="form-email" class="form-control" type="email" placeholder="Enter your email">
+                  </div>
+        
+                  <div class="mb-4">
+                    <label for="form-message" class="form-label">Message</label>
+                    <input id="form-message" class="form-control" type="text" placeholder="Enter your message">
+                  </div>
+        
+                  <div class="d-grid">
+                    <button class="btn btn-primary" type="submit">Send</button>
+                  </div>
+                </form>
+                <!-- Task 1.a [END] -->
+              </div>
+              <div class="tab-pane fade" id="task-1a-code" role="tabpanel" aria-labelledby="task-1a-code-tab" tabindex="0">
+                <pre>
+                  <code class="language-html trim">&lt;form action=&quot;http://example.com&quot; method=&quot;post&quot; class=&quot;form&quot;&gt;
+  &lt;div class=&quot;d-flex gap-3 mb-3&quot;&gt;
+    &lt;div&gt;
+      &lt;label for=&quot;form-name&quot; class=&quot;form-label&quot;&gt;Name&lt;/label&gt;
+      &lt;input id=&quot;form-name&quot; class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;Enter your name&quot;&gt;
+    &lt;/div&gt;
+
+    &lt;div&gt;
+      &lt;label for=&quot;form-surname&quot; class=&quot;form-label&quot;&gt;Surname&lt;/label&gt;
+      &lt;input id=&quot;form-surname&quot; class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;Enter your surname&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;mb-3&quot;&gt;
+    &lt;label for=&quot;form-email&quot; class=&quot;form-label&quot;&gt;E-mail&lt;/label&gt;
+    &lt;input id=&quot;form-email&quot; class=&quot;form-control&quot; type=&quot;email&quot; placeholder=&quot;Enter your email&quot;&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;mb-4&quot;&gt;
+    &lt;label for=&quot;form-message&quot; class=&quot;form-label&quot;&gt;Message&lt;/label&gt;
+    &lt;input id=&quot;form-message&quot; class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;Enter your message&quot;&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;d-grid&quot;&gt;
+    &lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;Send&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code>
+                </pre>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="task-1b-heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#task-1b-collapce" aria-expanded="false" aria-controls="task-1b-collapce">
+            Exercise 1.b
+          </button>
+        </h2>
+        <div id="task-1b-collapce" class="accordion-collapse collapse" aria-labelledby="task-1b-heading" data-bs-parent="#tasks">
+          <div class="accordion-body">
+
+            <ul class="nav nav-tabs mb-3" id="task-1b-tabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="task-1b-result-tab" data-bs-toggle="tab" data-bs-target="#task-1b-result" type="button" role="tab" aria-controls="task-1b-result" aria-selected="true">Result</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="task-1b-code-tab" data-bs-toggle="tab" data-bs-target="#task-1b-code" type="button" role="tab" aria-controls="task-1b-code" aria-selected="false">Code</button>
+              </li>
+            </ul>
+
+            <div class="tab-content" id="task-1b-tabs-content">
+              <div class="tab-pane fade show active" id="task-1b-result" role="tabpanel" aria-labelledby="task-1b-result-tab" tabindex="0">
+                <!-- Task 1.b [START] -->
+                <ul>
+                  <li>
+                    <span>Piemonte</span>
+                    <ul>
+                      <li class="regional-capital">Torino (città metropolitana)</li>
+                      <li>Alessandria</li>
+                      <li>Asti</li>
+                      <li>Biella</li>
+                      <li>Cuneo</li>
+                      <li>Novara</li>
+                      <li>Verbano-Cusio-Ossola</li>
+                      <li>Vercelli</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span>Liguria</span>
+                    <ul>
+                      <li class="regional-capital">Genova (città metropolitana)</li>
+                      <li>Imperia</li>
+                      <li>La Spezia</li>
+                      <li>Savona</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span>Veneto</span>
+                    <ul>
+                      <li class="regional-capital">Venezia (città metropolitana)</li>
+                      <li>Belluno</li>
+                      <li>Padova</li>
+                      <li>Rovigo</li>
+                      <li>Treviso</li>
+                      <li>Verona</li>
+                      <li>Vicenza</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span>Umbria</span>
+                    <ul>
+                      <li class="regional-capital">Perugia</li>
+                      <li>Terni</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span>Lazio</span>
+                    <ul>
+                      <li class="regional-capital">Roma (città metropolitana)</li>
+                      <li>Frosinone</li>
+                      <li>Latina</li>
+                      <li>Rieti</li>
+                      <li>Viterbo</li>
+                    </ul>
+                  </li>
+                </ul>
+                <!-- Task 1.b [END] -->
+              </div>
+              <div class="tab-pane fade" id="task-1b-code" role="tabpanel" aria-labelledby="task-1b-code-tab" tabindex="0">
+                <pre>
+                  <code class="language-html">&lt;ul&gt;
+  &lt;li&gt;
+    &lt;span&gt;Piemonte&lt;/span&gt;
+    &lt;ul&gt;
+      &lt;li class=&quot;regional-capital&quot;&gt;Torino (citt&agrave; metropolitana)&lt;/li&gt;
+      &lt;li&gt;Alessandria&lt;/li&gt;
+      &lt;li&gt;Asti&lt;/li&gt;
+      &lt;li&gt;Biella&lt;/li&gt;
+      &lt;li&gt;Cuneo&lt;/li&gt;
+      &lt;li&gt;Novara&lt;/li&gt;
+      &lt;li&gt;Verbano-Cusio-Ossola&lt;/li&gt;
+      &lt;li&gt;Vercelli&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;span&gt;Liguria&lt;/span&gt;
+    &lt;ul&gt;
+      &lt;li class=&quot;regional-capital&quot;&gt;Genova (citt&agrave; metropolitana)&lt;/li&gt;
+      &lt;li&gt;Imperia&lt;/li&gt;
+      &lt;li&gt;La Spezia&lt;/li&gt;
+      &lt;li&gt;Savona&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;span&gt;Veneto&lt;/span&gt;
+    &lt;ul&gt;
+      &lt;li class=&quot;regional-capital&quot;&gt;Venezia (citt&agrave; metropolitana)&lt;/li&gt;
+      &lt;li&gt;Belluno&lt;/li&gt;
+      &lt;li&gt;Padova&lt;/li&gt;
+      &lt;li&gt;Rovigo&lt;/li&gt;
+      &lt;li&gt;Treviso&lt;/li&gt;
+      &lt;li&gt;Verona&lt;/li&gt;
+      &lt;li&gt;Vicenza&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;span&gt;Umbria&lt;/span&gt;
+    &lt;ul&gt;
+      &lt;li class=&quot;regional-capital&quot;&gt;Perugia&lt;/li&gt;
+      &lt;li&gt;Terni&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;span&gt;Lazio&lt;/span&gt;
+    &lt;ul&gt;
+      &lt;li class=&quot;regional-capital&quot;&gt;Roma (citt&agrave; metropolitana)&lt;/li&gt;
+      &lt;li&gt;Frosinone&lt;/li&gt;
+      &lt;li&gt;Latina&lt;/li&gt;
+      &lt;li&gt;Rieti&lt;/li&gt;
+      &lt;li&gt;Viterbo&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code>
+                </pre>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="task-1c-heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#task-1c-collapce" aria-expanded="false" aria-controls="task-1c-collapce">
+            Exercise 1.c
+          </button>
+        </h2>
+        <div id="task-1c-collapce" class="accordion-collapse collapse" aria-labelledby="task-1c-heading" data-bs-parent="#tasks">
+          <div class="accordion-body">
+
+            <ul class="nav nav-tabs mb-3" id="task-1c-tabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="task-1c-result-tab" data-bs-toggle="tab" data-bs-target="#task-1c-result" type="button" role="tab" aria-controls="task-1c-result" aria-selected="true">Result</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="task-1c-code-tab" data-bs-toggle="tab" data-bs-target="#task-1c-code" type="button" role="tab" aria-controls="task-1c-code" aria-selected="false">Code</button>
+              </li>
+            </ul>
+            
+            <div class="tab-content" id="task-1c-tabs-content">
+              <div class="tab-pane fade show active" id="task-1c-result" role="tabpanel" aria-labelledby="task-1c-result-tab" tabindex="0">
+                <!-- Task 1.c [START] -->
+                <div class="row">
+                  <div class="column col-xs col-sm-3 col-lg border border-primary"></div>
+                  <div class="column col-xs col-sm-3 col-lg border border-primary"></div>
+                  <div class="column col-xs col-sm-6 col-lg border border-primary"></div>
+                </div>
+                <!-- Task 1.c [END] -->
+              </div>
+              <div class="tab-pane fade" id="task-1c-code" role="tabpanel" aria-labelledby="task-1c-code-tab" tabindex="0">
+                <pre>
+                  <code class="language-html">&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;column col-xs col-sm-3 col-lg border border-primary&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;column col-xs col-sm-3 col-lg border border-primary&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;column col-xs col-sm-6 col-lg border border-primary&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code>
+                </pre>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="task-2-heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#task-2-collapce" aria-expanded="false" aria-controls="task-2-collapce">
+            Exercise 2
+          </button>
+        </h2>
+        <div id="task-2-collapce" class="accordion-collapse collapse" aria-labelledby="task-2-heading" data-bs-parent="#tasks">
+          <div class="accordion-body">
+            
+            <!-- Task 2 [START] -->
+            <pre>
+              <code class="language-css">/* 2.a */
+#container article .animal {}
+
+/* 2.b */
+section .content form#contact-form {}
+/* OR */
+#contact-form {}</code>
+            </pre>
+            <!-- Task 2 [END] -->
+
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="task-3-heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#task-3-collapce" aria-expanded="false" aria-controls="task-3-collapce">
+            Exercise 3
+          </button>
+        </h2>
+        <div id="task-3-collapce" class="accordion-collapse collapse" aria-labelledby="task-3-heading" data-bs-parent="#tasks">
+          <div class="accordion-body">
+            
+            <!-- Task 3 [START] -->
+            <pre>
+              <code class="language-css">@font-face {
+  font-family: 'Digitazon';
+  src: url('./digitazon-light.woff');
+}</code>
+            </pre>
+            <!-- Task 3 [END] -->
+
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="task-4-heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#task-4-collapce" aria-expanded="false" aria-controls="task-4-collapce">
+            Exercise 4
+          </button>
+        </h2>
+        <div id="task-4-collapce" class="accordion-collapse collapse" aria-labelledby="task-4-heading" data-bs-parent="#tasks">
+          <div class="accordion-body">
+            
+            <!-- Task 4 [START] -->
+            <pre>
+              <code class="language-js">// 4.a
+function calculateCircleSquare(radius) {}
+
+// 4.b
+function calculateAge(birthDate) {}
+
+// 4.c
+function splitString(string, splitStep) {}</code>
+            </pre>
+            <!-- Task 4 [END] -->
+
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="task-5-heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#task-5-collapce" aria-expanded="false" aria-controls="task-5-collapce">
+            Exercise 5
+          </button>
+        </h2>
+        <div id="task-5-collapce" class="accordion-collapse collapse" aria-labelledby="task-5-heading" data-bs-parent="#tasks">
+          <div class="accordion-body">
+            
+            <!-- Task 5 [START] -->
+            <pre>
+              <code class="language-js">const week = [
+  {day: "monday", temperature: 19},
+  {day: "tuesday", temperature: 22},
+  {day: "wednesday", temperature: 22},
+  {day: "thursday", temperature: 21},
+  {day: "friday", temperature: 18},
+  {day: "saturday", temperature: 23},
+  {day: "sunday", temperature: 25},
+];
+
+function getAvarageTemperature(weekList = []) {
+  if (weekList.length === 0) return 0;
+
+  const temperatureSum = weekList.reduce((sum, { temperature }) => {
+    return sum + temperature;
+  }, 0);
+
+  return temperatureSum / weekList.length
+}</code>
+            </pre>
+            <!-- Task 5 [END] -->
+
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="task-6-heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#task-6-collapce" aria-expanded="false" aria-controls="task-6-collapce">
+            Exercise 6
+          </button>
+        </h2>
+        <div id="task-6-collapce" class="accordion-collapse collapse" aria-labelledby="task-6-heading" data-bs-parent="#tasks">
+          <div class="accordion-body">
+            
+            <!-- Task 6 [START] -->
+            <pre>
+              <code class="language-js">// function add(values)
+function calculateSum(values = []) {
+  let sum = 0;
+
+  // for (let i = 0, i &lt; values.length; i++) {
+  for (let i = 0; i &lt; values.length; i++) {
+    // sum =+ values(i);
+    sum += values[i];
+  }
+
+  return sum;
+}</code>
+            </pre>
+            <!-- Task 6 [END] -->
+
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="task-7-heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#task-7-collapce" aria-expanded="false" aria-controls="task-7-collapce">
+            Exercise 7
+          </button>
+        </h2>
+        <div id="task-7-collapce" class="accordion-collapse collapse" aria-labelledby="task-7-heading" data-bs-parent="#tasks">
+          <div class="accordion-body">
+            
+            <!-- Task 7 [START] -->
+            <div id="hover-me" style="background-color: yellow;">
+              Ogni volta che passerai il mouse sopra di me, un
+              asterisco apparirà in console!
+            </div>
+
+            <h6 class="mt-3">Code:</h6>
+            <pre>
+              <code class="language-js">const element = document.getElementById('hover-me');
+
+element.addEventListener('mouseenter', () => {
+  console.log('★');
+});</code>
+            </pre>
+
+            <script>
+              const element = document.getElementById('hover-me');
+
+              element.addEventListener('mouseenter', () => {
+                console.log('★');
+              });
+            </script>
+            <!-- Task 7 [END] -->
+
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="task-8-heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#task-8-collapce" aria-expanded="false" aria-controls="task-8-collapce">
+            Exercise 8
+          </button>
+        </h2>
+        <div id="task-8-collapce" class="accordion-collapse collapse" aria-labelledby="task-8-heading" data-bs-parent="#tasks">
+          <div class="accordion-body">
+            
+            <!-- Task 8 [START] -->
+            <pre>
+              <code class="language-js">function getMaxTemperature(weekList = []) {
+  if (weekList.length === 0) return 0;
+
+  const temperatures = weekList.map(({ temperature }) => temperature);
+
+  return Math.max(...temperatures);
+}
+
+function getMinTemperature(weekList = []) {
+  if (weekList.length === 0) return 0;
+
+  const temperatures = weekList.map(({ temperature }) => temperature);
+
+  return Math.min(...temperatures);
+}</code>
+            </pre>
+            <!-- Task 8 [END] -->
+
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="task-9-heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#task-9-collapce" aria-expanded="false" aria-controls="task-9-collapce">
+            Exercise 9
+          </button>
+        </h2>
+        <div id="task-9-collapce" class="accordion-collapse collapse" aria-labelledby="task-9-heading" data-bs-parent="#tasks">
+          <div class="accordion-body">
+            
+            <!-- Task 9 [START] -->
+            <pre>
+              <code class="language-js">function getTemperatures(weekList = []) {
+  return weekList.map(({ temperature }) => temperature);
+}
+
+// 9.a
+function getSortedTemperatures(weekList = []) {
+  return getTemperatures(weekList).sort((a, b) => a - b);
+}</code>
+            </pre>
+            <!-- Task 9 [END] -->
+
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="task-10-heading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#task-10-collapce" aria-expanded="false" aria-controls="task-10-collapce">
+            Exercise 10
+          </button>
+        </h2>
+        <div id="task-10-collapce" class="accordion-collapse collapse" aria-labelledby="task-10-heading" data-bs-parent="#tasks">
+          <div class="accordion-body">
+
+            <ul class="nav nav-tabs mb-3" id="task-10-tabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="task-10-result-tab" data-bs-toggle="tab" data-bs-target="#task-10-result" type="button" role="tab" aria-controls="task-10-result" aria-selected="true">Result</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="task-10-code-tab" data-bs-toggle="tab" data-bs-target="#task-10-code" type="button" role="tab" aria-controls="task-10-code" aria-selected="false">Code</button>
+              </li>
+            </ul>
+
+            <div class="tab-content" id="task-10-tabs-content">
+              <div class="tab-pane fade show active" id="task-10-result" role="tabpanel" aria-labelledby="task-10-result-tab" tabindex="0">
+                <!-- Task 10 [START] -->
+                <article data-post-id="post1">
+                  <h3>Post Title</h3>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, perspiciatis.<br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae deleniti nam tempore vero praesentium.
+                  </p>
+                  <hr>
+                  <div>
+                    <div data-comment-id="comment1" class="mb-2">
+                      <div class="text-secondary">example1@gmail.com</div>
+                      <div>Lorem, ipsum dolor.</div>
+                    </div>
+                    <div data-comment-id="comment2" class="mb-2">
+                      <div class="text-secondary">example2@gmail.com</div>
+                      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, deserunt.</div>
+                    </div>
+                    <div data-comment-id="comment3" class="mb-2">
+                      <div class="text-secondary">example3@gmail.com</div>
+                      <div>Lorem ipsum dolor sit amet consectetur.</div>
+                    </div>
+                  </div>
+                </article>
+                <!-- Task 10 [END] -->
+              </div>
+              <div class="tab-pane fade" id="task-10-code" role="tabpanel" aria-labelledby="task-10-code-tab" tabindex="0">
+                <pre>
+                  <code class="language-html">&lt;article data-post-id=&quot;post1&quot;&gt;
+  &lt;h3&gt;Post Title&lt;/h3&gt;
+  &lt;p&gt;
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, perspiciatis.&lt;br&gt;&lt;br&gt;
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae deleniti nam tempore vero praesentium.
+  &lt;/p&gt;
+  &lt;hr&gt;
+  &lt;div&gt;
+    &lt;div data-comment-id=&quot;comment1&quot; class=&quot;mb-2&quot;&gt;
+      &lt;div class=&quot;text-secondary&quot;&gt;example1@gmail.com&lt;/div&gt;
+      &lt;div&gt;Lorem, ipsum dolor.&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div data-comment-id=&quot;comment2&quot; class=&quot;mb-2&quot;&gt;
+      &lt;div class=&quot;text-secondary&quot;&gt;example2@gmail.com&lt;/div&gt;
+      &lt;div&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, deserunt.&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div data-comment-id=&quot;comment3&quot; class=&quot;mb-2&quot;&gt;
+      &lt;div class=&quot;text-secondary&quot;&gt;example3@gmail.com&lt;/div&gt;
+      &lt;div&gt;Lorem ipsum dolor sit amet consectetur.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/article&gt;</code>
+                </pre>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</body>
+</html>
